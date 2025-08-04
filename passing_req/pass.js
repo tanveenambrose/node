@@ -34,8 +34,9 @@ const server = http.createServer((req, res) => {
             const params = new URLSearchParams(parsedBody);
             const objbody = Object.fromEntries(params.entries());
             console.log(objbody);
+            fs.writeFileSync('user.txt', JSON.stringify(objbody));
         });
-        fs.writeFileSync('user.txt', 'Tanveen Ambrose');
+        
         res.statusCode = 302;
         res.setHeader('Location', '/');
 
