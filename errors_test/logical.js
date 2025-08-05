@@ -1,6 +1,6 @@
 const logicalError = ()=>{
     const num = 5;
-    if(num == 10){
+    if(num = 10){
         console.log(num);
     }
     else{
