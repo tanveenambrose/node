@@ -31,17 +31,6 @@ const requestHandler =(req, res)=>{
  }
  else if(req.url === '/calculate-result' && req.method === 'POST'){
     return sumRequestHandler(req, res);
-    // res.setHeader('Content-Type', 'text/html');
-    // res.write(`
-    //     <html>
-    //     <head>
-    //     <title>The Rersult</title>
-    //     </head>
-    //     <body>
-    //     <h1>The Sum of these two numbers is = ${req.body.num1 + req.body.num2}</h1>
-    //     </body>
-    //     </html>`)
-    //     return res.end();
  }
 
  else{
